@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPri">#2a2d2f</color>
+    <color name="colorPriDark">#212527</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorPrimaryTrans">#ee2a2d2f</color>
+
+    <color name="colorGreen">#1fa212</color>
+    <color name="colorGreenDark">#225725</color>
+
+    <color name="whiteDark">#a7a7a7</color>
+    <color name="black">#141414</color>
+
+</resources>

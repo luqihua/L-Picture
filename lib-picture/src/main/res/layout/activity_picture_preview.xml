@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar" />
+
+
+    <FrameLayout
+        android:id="@+id/fl_bottom_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryTrans"
+        android:inAnimation="@anim/slide_up"
+        android:outAnimation="@anim/slide_down">
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#4d4c4c" />
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="15dp"
+            android:text="编辑"
+            android:textColor="@drawable/selector_text_color_white"
+            android:textSize="14sp" />
+
+
+        <android.support.v7.widget.AppCompatCheckedTextView
+            android:id="@+id/ctv_check"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="10dp"
+            android:checkMark="@drawable/selector_check"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="选择"
+            android:textColor="@drawable/selector_text_color_white" />
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_selected_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fl_bottom_lay"
+        android:background="@color/colorPrimaryTrans"/>
+
+</RelativeLayout>

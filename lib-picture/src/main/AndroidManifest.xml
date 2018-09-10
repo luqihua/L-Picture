@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="lu.photo">
+    <application>
+        <activity android:name="com.lu.lib.picture.ui.AlbumActivity"/>
+        <activity android:name="com.lu.lib.picture.ui.PicturePreviewActivity"/>
+        <activity android:name="com.lu.lib.picture.ui.PictureEditActivity"/>
+        <activity android:name="com.lu.lib.picture.crop.CropImageActivity"
+                  android:theme="@style/Base.Theme.AppCompat"/>
+    </application>
+</manifest>
