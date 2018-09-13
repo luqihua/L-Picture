@@ -20,6 +20,11 @@ android {
         }
     }
 
+    lintOptions {
+        abortOnError false
+    }
+
+
 }
 
 dependencies {
@@ -29,3 +34,5 @@ dependencies {
     implementation "com.android.support:exifinterface:${SUPPORT_SDK_VERSION}"
     implementation "com.android.support:design:${SUPPORT_SDK_VERSION}"
 }
+
+apply from:'jcent.gradle'

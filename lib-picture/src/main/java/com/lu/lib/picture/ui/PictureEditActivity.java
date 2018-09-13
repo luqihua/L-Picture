@@ -133,11 +133,7 @@ public class PictureEditActivity extends AppCompatActivity implements
     protected Uri getOutputUri() {
         Uri outputUri = mOptions.outputUri;
         if (outputUri == null || outputUri.equals(Uri.EMPTY)) {
-
-            File file = FileUtil.createImageCacheFile(
-                    this,
-                    "cropped",
-                    mOptions.outputCompressFormat);
+            File file = FileUtil.createImageCacheFile( this, "cropped", mOptions.outputCompressFormat);
             outputUri = Uri.fromFile(file);
         }
         return outputUri;

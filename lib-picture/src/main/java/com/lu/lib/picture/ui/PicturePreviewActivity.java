@@ -22,7 +22,6 @@ import com.lu.lib.picture.crop.CropActivityStart;
 import com.lu.lib.picture.crop.CropImage;
 import com.lu.lib.picture.util.FileUtil;
 import com.lu.lib.picture.util.PhotoOptions;
-import com.lu.lib.picture.widget.CustomViewPager;
 import com.lu.lib.picture.widget.PictureChooseDialog;
 
 import java.util.ArrayList;
