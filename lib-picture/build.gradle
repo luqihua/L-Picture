@@ -36,7 +36,7 @@ dependencies {
     implementation "com.android.support:appcompat-v7:${SUPPORT_SDK_VERSION}"
     implementation "com.android.support:recyclerview-v7:${SUPPORT_SDK_VERSION}"
     implementation "com.android.support:exifinterface:${SUPPORT_SDK_VERSION}"
-    implementation "com.android.support:design:${SUPPORT_SDK_VERSION}"
+    api "com.android.support:design:${SUPPORT_SDK_VERSION}"
 }
 
 apply from:'jcent.gradle'

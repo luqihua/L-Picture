@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         PhotoOptions options = new PhotoOptions.Builder()
                 .setMaxCount(6)//目标数量
                 .setCurrentCount(mAdapter.getItemCount())//当前已有数量
-                .setCompress(true)
+                .setCompress(true)//选中图片后是否进行压缩
                 .build();
         mPhotoDialog = LPicture.getInstance().createPicDialog(this, options, new IPicCallback() {
             @Override
