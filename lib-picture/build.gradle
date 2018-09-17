@@ -1,6 +1,10 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.github.luqihua'
 
 android {
+
     compileSdkVersion COMPILE_SDK_VERSION
 
     defaultConfig {

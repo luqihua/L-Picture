@@ -9,6 +9,7 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:3.1.3'
         classpath 'com.novoda:bintray-release:0.8.1'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -40,9 +41,9 @@ ext {
     //jcent.gradle脚本变量
 //    ================================
     //SDK版本
-    lib_Version = '1.0.0'
+    lib_Version = '1.0'
 //    ================================
-    lib_module = 'lpicture'//要上传的module
+    lib_module = 'lpicturetool'//远程项目名
     lib_repoName = 'maven'//远程仓库名字,不指明，默认是上传到maven
     lib_userOrg = 'qihua'//bintray.com的用户名
     lib_groupId = 'com.lu.lib'//jcenter上的路径
